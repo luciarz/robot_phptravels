@@ -1,3 +1,6 @@
 [Oo]utput
 .vscode/
 __pycache__
+*.xml
+*.png
+*.html

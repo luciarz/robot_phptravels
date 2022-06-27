@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../Infra/base.robot
+Resource    ./LoginSignupPage.robot
 Library     ../Infra/Library/Login.py
 
 *** Variables ***
@@ -87,15 +88,11 @@ Preencher as informações da tela
     Clicar Botao Cookie
     Realize Signup  
     Capturar Tipo de Conta
-    Sleep       2s
     Click Element       ${account_type}
-    
-    Selecionar Tipo de Conta    Agent   
-    Sleep       5s
-    Verificar Tipo de Conta     Agent
-    
+    Selecionar Tipo de Conta    Agent
 
 Clicar em Registrar
+    Scroll Element Into View    ${btnSignup}
     Log to console      Clicou em Registrar
     Clicar Botao Signup
 

@@ -2,7 +2,7 @@
 Resource    ../Infra/base.robot
 
 *** Variables ***
-${lblLoginSignup}       xpath://h5[@class="title"]
+${lblLoginSignup}       xpath://h5[text()="Login"]
 
 *** Keywords ***
 
