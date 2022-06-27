@@ -15,7 +15,7 @@ Open Session
     ${browser}=      Pegar Valor Json    browser
     Open Browser        ${base_url}     ${browser}
     Get Selenium speed
-    #Maximize Browser Window
+    Maximize Browser Window
 
 
 Close Session

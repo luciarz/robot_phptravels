@@ -11,6 +11,7 @@ ${btnLogin}         xpath://button[./span[text()="Login"]]
 
 *** Keywords ***
 #Funcoes
+#Corpo da funcao
 Escrever login
     [Arguments]     ${username}
     Input Text      ${txtUsername}      ${username}
@@ -24,6 +25,7 @@ Clicar botao login
 
 #Funcionalidade
 Realize login
+#Chamada da funcao
     [Arguments]     ${username}     ${password}
 
     Escrever login      ${username}

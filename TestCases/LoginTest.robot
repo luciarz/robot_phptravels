@@ -17,5 +17,6 @@ Registro de usuario
     Acessar o site de Registro
     Preencher as informações da tela
     Clicar em Registrar
+    Deve ser redirecionado para a tela de loginSignup
 
 
