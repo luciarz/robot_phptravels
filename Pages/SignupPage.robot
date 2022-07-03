@@ -16,7 +16,6 @@ ${valorSelect}      xpath://span[@title="Customer"]
 ${valorAnterior}    texto
 
 #${valorSelect}      xpath://span[@class="selection"]/span
-${btnCookie}        xpath://button[@id="cookie_stop"]
 #${type_agent}      xpath://li[text()="Agent"]
 
 *** Keywords ***
@@ -53,10 +52,6 @@ Selecionar Tipo de Conta
 
 Clicar Botao Signup
     Click button        ${btnSignup}
-
-Clicar Botao Cookie
-    Log to console      Cookie clicado
-    Click button        ${btnCookie}
 
 #Funcionalidade
 
