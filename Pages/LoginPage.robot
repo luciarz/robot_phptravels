@@ -42,3 +42,9 @@ Logar com login e senha corretos
 
 Deve ser redirecionado para a tela de productos
    Verificar label Products
+
+Logar com email inexistente
+    Realize login       failed@phptravels.com   demouser
+
+Deve ser redirecionado para a tela failed
+    Location Should Contain         login/failed

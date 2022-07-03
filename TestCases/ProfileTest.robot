@@ -2,7 +2,7 @@
 Resource    ../Pages/ProfilePage.robot
 
 Test Setup      Open Session
-#Test Teardown   Close Session
+Test Teardown   Close Session
 
 *** Test Cases ***
 Alterar profile de usuario

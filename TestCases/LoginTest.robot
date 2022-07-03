@@ -19,4 +19,10 @@ Registro de usuario
     Clicar em Registrar
     Deve ser redirecionado para a tela de loginSignup
 
+Realizar login email inexistente
+    [Tags]      login   loginEmailInexistente
+    Acessar o site principal
+    Logar com email inexistente
+    Deve ser redirecionado para a tela failed
+
 
