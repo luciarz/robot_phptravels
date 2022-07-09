@@ -5,7 +5,6 @@ Resource    ./ProfileSucessPage.robot
 
 *** Variables ***
 ${txtFirstNameProfile}      xpath://input[@name="firstname"]
-${btnUpdateProfile}         xpath://button[text()="Update Profile"]
 
 *** Keywords ***
 #Funcoes
@@ -15,13 +14,7 @@ Alterar First Name
 
 Clicar Botao UpdateProfile
     Log to console      Clicou Update
-    Click button        ${btnUpdateProfile}
-
-Scroll To Element
-    [Arguments]  ${locator}
-    ${x}=        Get Horizontal Position  ${locator}
-    ${y}=        Get Vertical Position    ${locator}
-    Execute Javascript  window.scrollTo(${x}, ${y})
+    Submit form     
 
 #Funcionalidade
 Alterar Perfil
@@ -32,7 +25,6 @@ Acessar o site de profile
     #Log to console      Acessou o site de profile
     Ir Para             login
     Realize login       user@phptravels.com   demouser
-    #Realize login       lu@hotmail.com   123
     Ir Para             account/profile
     Clicar Botao Cookie
 
@@ -43,15 +35,7 @@ Alterar as informações do usuario
     
 Clicar em Update Profiles
     Log to console                      Clicou em Update Profiles
-    #Log to console                      Antes do scroll
-    #Sleep                               2s
-    #Scroll Element Into View            ${btnUpdateProfile}
-    #Execute JavaScript                 window.scrollTo(0,document.body.scrollHeight)
-    #Scroll To Element                   ${btnUpdateProfile}
-    #Set Focus To Element                ${btnUpdateProfile}
-    #Log to console                      Depois do scroll
-    #Clicar Botao UpdateProfile
-    Ir Para                             account/profile/success
+    Clicar Botao UpdateProfile
 
 
 Deve ser redirecionado para a tela de profileSucesso
